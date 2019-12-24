@@ -1,0 +1,20 @@
+{
+    "name": "Shorten Link",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["contextMenus","activeTab","notifications"],
+    "background": {
+        "scripts": ["common.js","background.js"],
+        "persistent": false
+      },
+    "browser_action": {
+        "default_title":"Copied",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["popup.js"]
+    }],
+    "manifest_version": 2
+  }
