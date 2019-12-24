@@ -1,4 +1,4 @@
-var BASE_API_URL="http://localhost:5000/";
+var BASE_API_URL="https://shink.herokuapp.com/";
 function copyTextToClipboard(text) {
     //Create a textbox field where we can insert text to. 
     var copyFrom = document.createElement("textarea");
